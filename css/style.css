@@ -3,3 +3,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: black;
+}
+
+/* top bar */
+.window-settings {
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed brown;
+}
+
+.window-settings .window-btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .6rem;
+    padding: 5px 5px 0 0;
+    gap: 5px;
+}
+
+.window-btn .btn {
+    background-color: #4A4A4A;
+    padding: .2rem .2rem;
+    font-size: .6rem;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+/* top bar */
+
+/* user window */
+.user-window {
+    display: flex;
+}
