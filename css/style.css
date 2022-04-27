@@ -10,6 +10,10 @@ body {
     background-color: black;
 }
 
+.webapp {
+    height: 100vh;
+}
+
 /* top bar */
 .window-settings {
     color: white;
@@ -36,6 +40,24 @@ body {
 /* top bar */
 
 /* user window */
-.user-window {
+.user-window .user-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: #4A4A4A;
+}
+
+.user-row {
+    border: 1px dashed plum;
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+.user-col {
+    border: 1px dashed deeppink;
+    flex-grow: 1;
+    flex-basis: calc(100% / 7 - 5px);
+    height: 100px;
 }
