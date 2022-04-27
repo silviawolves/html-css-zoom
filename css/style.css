@@ -10,11 +10,14 @@ body {
     background-color: black;
 }
 
+.viewport {
+    height: 100vh;
+}
+
 /* top bar */
 .window-settings {
     color: white;
-    padding-bottom: 20px;
-    height: 7vh;
+    padding-bottom: 10px;
 }
 
 .window-settings .window-btn {
@@ -39,7 +42,7 @@ body {
 .user-window .user-container {
     width: 90%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .user-row {
@@ -54,7 +57,7 @@ body {
     flex-grow: 1;
     flex-basis: calc(100% / 7 - 5px);
     overflow: hidden;
-    height: calc((100vh - 10px) / 7);
+    height: calc(100vh / 7);
     position: relative;
 }
 
@@ -77,31 +80,73 @@ body {
 /* functions bar */
 .functions-bar {
     background-color: #222222;
-    padding: 1rem 0;
-    /* height: 10vh; */
 }
 
 .functions-bar .functions-row {
     display: flex;
     justify-content: space-between;
-    border: 1px dashed yellowgreen;
+    align-items: center;
     gap: 20px;
-}
-
-.functions-row .btn-col {
-    height: 50px;
-    width: 50px;
-    border: 1px dashed yellow;
+    color: white;
 }
 
 .btn-col.left {
     flex-grow: 1;
+    display: flex;
+    padding-left: 1rem;
 }
 
 .btn-col.large {
     flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .btn-col.right {
     flex-grow: 1;
+}
+
+.btn-col {
+    text-align: center;
+}
+
+.btn-with-arrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-icon {
+    font-size: 1.4rem;
+    padding-bottom: .2rem;
+}
+
+.fa-solid.fa-share-from-square {
+    color: #48C900;
+}
+
+.more-padding {
+    padding: 0 .6rem;
+}
+
+.btn-text, .btn-arrow {
+    font-size: .6rem;
+}
+
+.end-btn {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.end-btn a {
+    display: inline-block;
+    text-align: center;
+    padding: 1.5rem .9rem;
+    background-color: #4A4A4A;
+    text-decoration: none;
+    color: red;
+    font-size: .6rem;
 }
