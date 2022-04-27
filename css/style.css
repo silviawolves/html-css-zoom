@@ -10,15 +10,11 @@ body {
     background-color: black;
 }
 
-.webapp {
-    height: 100vh;
-}
-
 /* top bar */
 .window-settings {
     color: white;
     padding-bottom: 20px;
-    border-bottom: 1px dashed brown;
+    height: 7vh;
 }
 
 .window-settings .window-btn {
@@ -44,11 +40,10 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 1rem 0;
-    background-color: #4A4A4A;
 }
 
 .user-row {
-    border: 1px dashed plum;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 5px;
@@ -56,8 +51,57 @@ body {
 }
 
 .user-col {
-    border: 1px dashed deeppink;
     flex-grow: 1;
     flex-basis: calc(100% / 7 - 5px);
-    height: 100px;
+    overflow: hidden;
+    height: calc((100vh - 10px) / 7);
+    position: relative;
+}
+
+.user-col img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.name-tag {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: .6rem;
+    background-color: rgba(86, 86, 86, 0.4);
+    padding: .3rem;
+}
+/* user window */
+
+/* functions bar */
+.functions-bar {
+    background-color: #222222;
+    padding: 1rem 0;
+    /* height: 10vh; */
+}
+
+.functions-bar .functions-row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed yellowgreen;
+    gap: 20px;
+}
+
+.functions-row .btn-col {
+    height: 50px;
+    width: 50px;
+    border: 1px dashed yellow;
+}
+
+.btn-col.left {
+    flex-grow: 1;
+}
+
+.btn-col.large {
+    flex-grow: 2;
+}
+
+.btn-col.right {
+    flex-grow: 1;
 }
