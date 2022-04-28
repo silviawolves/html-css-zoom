@@ -12,9 +12,15 @@ body {
 
 .viewport {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* top bar */
+.user-window {
+    overflow: hidden;
+}
+
 .window-settings {
     color: white;
     padding-bottom: 10px;
