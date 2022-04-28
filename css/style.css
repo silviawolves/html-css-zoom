@@ -59,6 +59,8 @@ body {
     overflow: hidden;
     height: calc(100vh / 7);
     position: relative;
+    min-width: 100px;
+    min-height: 80px;
 }
 
 .user-col img {
